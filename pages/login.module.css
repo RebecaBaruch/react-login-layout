@@ -22,7 +22,7 @@ h1.ola{
 }
 
 .textBox{
-    margin-left: 25px;
+    margin-left: 40px;
     width: 40%;
 }
 
@@ -38,9 +38,10 @@ h1.ola{
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 60px 0;
 
-    width: 60%;
+    width: 290px;
+    height: 320px;
     border-radius: 14px;
     background-color: rgb(246, 246, 246);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);

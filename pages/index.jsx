@@ -16,6 +16,7 @@ import Button from '../components/Button/Button';
 import Title from '../components/Title/Title';
 import Subtitle from '../components/Subtitle/Subtitle';
 import DataInput from '../components/DataInput/DataInput';
+import BrText from '../components/BrText/BrText';
 
 //aprendendo a usar constructor nos códigos comentados
 /*class Toggle extends React.Component{
@@ -46,7 +47,7 @@ function HomePage(){
     return (
         //elemento de exemplo com alteração do state no constructor:
         //<Toggle />
-
+        
         <>
             <div className={styles.body}>
                 <div className={styles.leftSide}>
@@ -57,13 +58,15 @@ function HomePage(){
                         <Subtitle text="Capture and share the world's moments."/>
                     </div>
                 </div>
+
                 <div className={styles.rightSide}>
                     <form action="" className={styles.loginForm}>
                         <Image className={styles.instagram} src={instagram} alt="instagram-logo"/>
-                        
+
                         <DataInput type='text' placeholder='Number, user or e-mail' />
                         <DataInput type='password' placeholder='Password' />
                         <Button text='Login'/>
+                        <BrText text='or'/>
                     </form>
                 </div>
             </div>
