@@ -17,6 +17,7 @@ import Title from '../components/Title/Title';
 import Subtitle from '../components/Subtitle/Subtitle';
 import DataInput from '../components/DataInput/DataInput';
 import BrText from '../components/BrText/BrText';
+import Link from '../components/Link/Link';
 
 //aprendendo a usar constructor nos códigos comentados
 /*class Toggle extends React.Component{
@@ -67,6 +68,7 @@ function HomePage(){
                         <DataInput type='password' placeholder='Password' />
                         <Button text='Login'/>
                         <BrText text='or'/>
+                        <Link></Link>
                     </form>
                 </div>
             </div>
