@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 //react-icons
-import GrFacebook from 'react-icons';
+import { GrFacebook } from 'react-icons';
 
 //images
 import cell from '../img/cellphone.png';
@@ -68,7 +68,7 @@ function HomePage(){
                         <DataInput type='password' placeholder='Password' />
                         <Button text='Login'/>
                         <BrText text='or'/>
-                        <Link></Link>
+                        {/* <Link IconComponent={"facebook"} text="Logar com o facebook"/> */}
                     </form>
                 </div>
             </div>
