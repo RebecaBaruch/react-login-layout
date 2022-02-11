@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 //react-icons
-import { GrFacebook } from 'react-icons';
 
 //images
-import cell from '../img/cellphone.png';
-import instagram from '../img/instagram-logo.png';
+import cell from '../public//img/cellphone.png';
+import instagram from '../public/img/instagram-logo.png';
+import appleStore from '../public/img/app-store.png';
+// import googlePlay from '../public/img/google-play.png';
 
 //styles
 import styles from './login.module.css';
@@ -18,6 +19,7 @@ import Subtitle from '../components/Subtitle/Subtitle';
 import DataInput from '../components/DataInput/DataInput';
 import BrText from '../components/BrText/BrText';
 import Link from '../components/Link/Link';
+import ImageLink from '../components/ImageLink/ImageLink';
 
 //aprendendo a usar constructor nos códigos comentados
 /*class Toggle extends React.Component{
@@ -57,18 +59,22 @@ function HomePage(){
                     <div className={styles.textBox}>
                         <Title title='welcome!'/>
                         <Subtitle text="Capture and share the world's moments."/>
+                        <div className={styles.istallBox}>
+                            <ImageLink href='#' src={ appleStore }/>
+                        </div>
                     </div>
                 </div>
 
                 <div className={styles.rightSide}>
                     <form action="" className={styles.loginForm}>
                         <Image className={styles.instagram} src={instagram} alt="instagram-logo"/>
-
                         <DataInput type='text' placeholder='Number, user or e-mail' />
+
+                        
                         <DataInput type='password' placeholder='Password' />
                         <Button text='Login'/>
                         <BrText text='or'/>
-                        {/* <Link IconComponent={"facebook"} text="Logar com o facebook"/> */}
+                        <Link nome="facebook" text="Sign in with facebook"/>
                     </form>
                 </div>
             </div>

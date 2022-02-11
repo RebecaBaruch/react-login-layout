@@ -18,7 +18,7 @@ h1.ola{
     align-items: center;
     width: 50%;
     height: 100%;
-    background-image: url(../img/bg-psyco.png);
+    background-image: url(../public/img/bg-psyco.png);
 }
 
 .textBox{
@@ -45,4 +45,13 @@ h1.ola{
     border-radius: 14px;
     background-color: rgb(246, 246, 246);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+.istallBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1px;
 }

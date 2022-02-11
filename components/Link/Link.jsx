@@ -1,17 +1,24 @@
 import React, {useState} from 'react';
-import { GrFacebook } from 'react-icons';
-// import styles from './Link.module.css'
+import Image from 'next/image';
+
+import FaceLogo from '../../public/img/logo-facebook.png';
+
+import styles from './Link.module.css'
+
 
 export default function Link(props){
-    // const icons = {
-    //     facebook: 'M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z',
-    // };
+    const icons = {
+        facebook: FaceLogo,
+    };
       
-    // // const Icon = props => (
-    // //     <svg width="22" height="22" viewBox="0 0 1024 1024">
-    // //         <path d={icons[props.icon]}></path>
-    // //     </svg>
-    // // );
+    const Icon = props => (
+        <Image src={icons[props.icon]} 
+               className={styles.icon} 
+               alt="ícone"
+               width={25}
+               height={25}
+        />
+    );
 
 
     //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -26,9 +33,11 @@ export default function Link(props){
 
     return(
         <>
-            {/* <Icon icon={props.name}/> */}
-            {!!props.IconComponent && (<props.IconComponent/>)}            
-            <p>{props.text}</p>
+            <div className={styles.box}>
+                {/* {!!props.IconComponent && (<props.IconComponent/>)}             */}
+                <Icon icon={props.nome}/>
+                <p className={styles.text}>{props.text}</p>
+            </div>
         </>
     )
 } 
