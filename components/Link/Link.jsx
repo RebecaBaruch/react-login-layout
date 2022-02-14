@@ -33,11 +33,11 @@ export default function Link(props){
 
     return(
         <>
-            <div className={styles.box}>
+            <a className={styles.linkBox} href={props.href}>
                 {/* {!!props.IconComponent && (<props.IconComponent/>)}             */}
                 <Icon icon={props.nome}/>
                 <p className={styles.text}>{props.text}</p>
-            </div>
+            </a>
         </>
     )
 } 

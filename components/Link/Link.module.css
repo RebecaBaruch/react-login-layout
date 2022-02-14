@@ -11,11 +11,19 @@
     color: #2958f3;
 }
 
-.box{
+.linkBox{
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
 
     width: 60%;
+    text-decoration: none;
+}
+
+.linkBox:hover .text{
+    color: #00b7ff;
+    
+
+    transition: all 1s ease-out;
 }

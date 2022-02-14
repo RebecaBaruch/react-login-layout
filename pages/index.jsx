@@ -7,7 +7,7 @@ import Image from 'next/image';
 import cell from '../public//img/cellphone.png';
 import instagram from '../public/img/instagram-logo.png';
 import appleStore from '../public/img/app-store.png';
-// import googlePlay from '../public/img/google-play.png';
+import googlePlay from '../public/img/google-play.png';
 
 //styles
 import styles from './login.module.css';
@@ -59,8 +59,10 @@ function HomePage(){
                     <div className={styles.textBox}>
                         <Title title='welcome!'/>
                         <Subtitle text="Capture and share the world's moments."/>
+
                         <div className={styles.istallBox}>
-                            <ImageLink href='#' src={ appleStore }/>
+                            <ImageLink href='https://apps.apple.com/br/app/instagram/id389801252' src={ appleStore } alt="app-store" />
+                            <ImageLink href='https://play.google.com/store/apps/details?id=com.instagram.android#' src={googlePlay} alt="google-play" />
                         </div>
                     </div>
                 </div>
@@ -74,7 +76,7 @@ function HomePage(){
                         <DataInput type='password' placeholder='Password' />
                         <Button text='Login'/>
                         <BrText text='or'/>
-                        <Link nome="facebook" text="Sign in with facebook"/>
+                        <Link href="#" nome="facebook" text="Sign in with facebook"/>
                     </form>
                 </div>
             </div>
