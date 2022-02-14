@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Footer.module.css';
 
 export default function Footer(){
 
@@ -20,11 +21,6 @@ export default function Footer(){
         {
             txt:'Help',
             href:'https://help.instagram.com/',
-        },
-
-        {
-            txt:'API',
-            href:'https://developers.facebook.com/docs/instagram',
         },
 
         {
@@ -57,18 +53,19 @@ export default function Footer(){
             href: 'https://www.instagram.com/explore/locations/'
         },
     ];
-
+    
     const FooterElements = links.map( link => 
-         <a href={link.href}>
-            <li>{link.txt}</li>   
+         <a className={styles.a} href={link.href}>
+            <li className={styles.li}>{link.txt}</li>  
          </a>
     );
 
     return(
-        <>
-            <ul>
-                {FooterElements}
-            </ul>
-        </>
+        
+        <ul className={styles.ul}>
+            {FooterElements}
+
+            <li>© 2021 Instagram from Facebook</li>
+        </ul>
     )
 } 

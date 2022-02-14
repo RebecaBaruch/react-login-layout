@@ -1,15 +1,26 @@
-h1.ola{
+/* h1.ola{
     color: red;
-}
+} */
 
 .body{
     display:flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    background-image: url(../public/img/bg-psyco.png);
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 10vh;
+    width: 100%;
 }
 
 .leftSide{
@@ -18,7 +29,6 @@ h1.ola{
     align-items: center;
     width: 50%;
     height: 100%;
-    background-image: url(../public/img/bg-psyco.png);
 }
 
 .textBox{
