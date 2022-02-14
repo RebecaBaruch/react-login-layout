@@ -20,6 +20,7 @@ import DataInput from '../components/DataInput/DataInput';
 import BrText from '../components/BrText/BrText';
 import Link from '../components/Link/Link';
 import ImageLink from '../components/ImageLink/ImageLink';
+import Footer from '../components/Footer/Footer';
 
 //aprendendo a usar constructor nos códigos comentados
 /*class Toggle extends React.Component{
@@ -79,6 +80,8 @@ function HomePage(){
                         <Link href="#" nome="facebook" text="Sign in with facebook"/>
                     </form>
                 </div>
+
+                <Footer />
             </div>
         </>
     ) 
