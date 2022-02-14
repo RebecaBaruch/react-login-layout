@@ -1,0 +1,67 @@
+/* h1.ola{
+    color: red;
+} */
+
+.body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../public/img/bg-psyco.png);
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 10vh;
+    width: 100%;
+}
+
+.leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.textBox{
+    margin-left: 40px;
+    width: 35%;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.loginForm{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+
+    width: 290px;
+    height: 320px;
+    border-radius: 14px;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+}
+
+.istallBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1px;
+}
