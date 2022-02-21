@@ -1,10 +1,12 @@
 .ul{
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-
-    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    
     width: 50%;
     list-style: none;
 

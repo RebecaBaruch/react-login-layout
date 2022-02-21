@@ -4,7 +4,7 @@ import Image from 'next/image';
 //react-icons
 
 //images
-import cell from '../public//img/cellphone.png';
+import cell from '../public/img/cellphone.png';
 import instagram from '../public/img/instagram-logo.png';
 import appleStore from '../public/img/app-store.png';
 import googlePlay from '../public/img/google-play.png';
@@ -86,7 +86,7 @@ function HomePage(){
                     
                 </div>
 
-                <Footer />
+                <Footer className={styles.footer} />
             </div>
         </>
     ) 
