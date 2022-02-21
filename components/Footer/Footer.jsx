@@ -65,7 +65,6 @@ export default function Footer(){
         <ul className={styles.ul}>
             {FooterElements}
 
-            <li>© 2021 Instagram from Facebook</li>
         </ul>
     )
 } 
